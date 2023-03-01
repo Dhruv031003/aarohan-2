@@ -97,7 +97,6 @@
   height: max-content !important;
   background-color: rgba(255, 0, 13, 0.884);
   z-index: 2;
-  border-radius: 10px;
 }
 .info_cont_inner p {
   font-weight: 600;
@@ -105,7 +104,7 @@
   font-size: 20px !important;
 }
 .info_cont_inner .spec_font{
-  font-size: 25px !important;
+  font-size: 28px !important;
 }
 #about_aarohan {
   background-color: black;
@@ -263,7 +262,7 @@
 }
 @media screen and (max-width:1600px){
   .info_cont_inner .spec_font{
-    font-size: 20px !important;
+    font-size: 22px !important;
   }
   .info_cont_inner p{
     font-size: 17px !important;
@@ -287,6 +286,7 @@
   }
   .info_cont_inner{
     padding: 20px !important;
+    padding-top: 30px !important;
   }
   #fest{
     scale: (5,1);
@@ -338,7 +338,7 @@
     right: 0px;
   }
   .info_cont_inner{
-    width: 70vw !important;
+    width: 80vw !important;
   }
   .info_cont_inner .spec_font{
     font-size: 20px !important;
@@ -374,9 +374,10 @@
   }
   .info_cont_inner{
     padding: 10px !important;
+    padding-top: 20px !important;
   }
   .info_cont_inner .spec_font{
-    font-size: 16px !important;
+    font-size: 18px !important;
   }
   .info_cont_inner p{
     font-size: 14px !important;
