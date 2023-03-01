@@ -23,6 +23,7 @@ body {
   color: white !important;
   border-color: transparent !important;
   box-shadow: -8px -8px 0 -5px var(--red), 8px 8px 0 -5px var(--red) !important;
+  border-radius: 20px !important;
 }
 
 /* NAVBAR  */

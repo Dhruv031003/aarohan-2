@@ -46,9 +46,12 @@
   left: 250px;
   color: white;
 }
+#desc-date{
+  z-index: 1;
+}
 #date::before,
 #desc::before {
-  content: "";
+  content: " ";
   position: absolute;
   background-image: url(../images/bg.png);
   background-position: center;
@@ -164,6 +167,9 @@
   background-size: cover;
   background-attachment: fixed;
 }
+/* #logo{
+  filter: invert(1);
+} */
 #Events .spec_font {
   border-bottom: 3px solid black;
   font-family: fantasy;
@@ -360,6 +366,8 @@
   }
   #landing-inner h3{
     font-size: 20px !important;
+    letter-spacing: 0px;
+    word-spacing: 10px;
   }
   #desc-date p{
     font-size: 15px !important;
