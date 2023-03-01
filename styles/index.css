@@ -85,9 +85,6 @@
   top: 0px;
   left: 0px;
 }
-#about_us{
-  min-height: 100vh;
-}
 #about_us::before {
   content: "";
   position: absolute;
