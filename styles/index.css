@@ -1,22 +1,14 @@
 #landing-container {
-  width: 100vw !important;
   height: 100vh !important;
   margin: 0px !important;
   padding: 0px !important;
   position: relative;
-}
-#landing-container::before {
-  content: "";
-  position: absolute;
   background-image: url(../images/robo-girl.png);
   background-position: center;
   background-repeat: no-repeat;
   background-color: black;
   background-size: cover;
   background-attachment: fixed;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
 }
 
 #robo_girl {
@@ -67,9 +59,7 @@
   z-index: -1;
   opacity: 0.7;
 }
-.info_cont{
-  width:  100vw !important;
-}
+
 .info_cont_inner {
   position: relative;
   padding: 40px !important;
@@ -85,17 +75,13 @@
   top: 0px;
   left: 0px;
 }
-#about_us::before {
-  content: "";
-  position: absolute;
+#about_us{
   background-image: url(../images/cityscape.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 120%;
-  width: 100%;
-  z-index: -3;
+  padding: 30px !important;
 }
 
 .info_cont h2 {
@@ -106,7 +92,6 @@
 }
 .info_cont_inner {
   height: max-content !important;
-  overflow: hidden;
   background-color: rgba(255, 0, 13, 0.884);
   z-index: 2;
   border-radius: 10px;
@@ -135,9 +120,8 @@
   font-family: fantasy;
   transform: scaleY(3) !important;
 }
-#moving-text-1 {
+.moving-text{
   position: absolute;
-  top: 600px;
   left: 0px;
   color: white !important;
   font-size: 50px;
@@ -146,19 +130,14 @@
   letter-spacing: 20px !important;
   font-family: fantasy;
   scale:(1.5,1) !important;
+  z-index: -3;
+}
+#moving-text-1 {
+  bottom: -50px;
   animation: 60s linear 0s infinite alternate forwards running marquee;
 }
 #moving-text-2 {
-  position: absolute;
-  top: 670px;
-  left: 0px;
-  color: white !important;
-  font-size: 50px;
-  width: 200%;
-  white-space: nowrap;
-  letter-spacing: 20px !important;
-  font-family: fantasy;
-  scale:(1.5,1) !important;
+  bottom: -100px;
   animation: 60s linear 0s infinite alternate-reverse none running marquee;
 }
 @keyframes marquee {
@@ -173,25 +152,17 @@
 /* EVENTS  */
 #Events {
   flex-basis: 50% !important;
-  width:  100vw;
+  width: 75vw;
 }
 #event-bg{
   position: relative;
   height: 100% !important;
-}
-#event-bg::before{
-  content: " ";
-  position: absolute;
   background-image: url(../images/event-bg-1.jpg);
   background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  filter: grayscale(1);
 }
 #Events .spec_font {
   border-bottom: 3px solid black;
@@ -231,7 +202,7 @@
 
 #event_heading{
   transform: scaleY(1.3);
-  width: 100vw !important;
+  width: 100% !important;
   border-bottom: 4px solid white; 
 }
 
@@ -248,7 +219,7 @@
 }
 
 .event_cont:hover .card-body{
-  background-color:rgba(255, 0, 13, 0.884) !important;
+  background-color: white !important;
 }
 .event_cont:hover img{
   filter: grayscale(0);
@@ -269,9 +240,8 @@
 .btn:active,
 .open .dropdown-toggle.btn-default {
   background-color: transparent !important;
-  color: white !important;
   border-color: transparent !important;
-  box-shadow: -8px -8px 0 -6px white, 8px 8px 0 -6px white !important;
+  box-shadow: -8px -8px 0 -6px var(--red), 8px 8px 0 -6px var(--red) !important;
 }
 
 @media screen and (min-width:2000px){
@@ -291,6 +261,12 @@
   .info_cont_inner p{
     font-size: 17px !important;
   }
+  #fest{
+    font-size: 150px;
+  }
+  #Events{
+    width: 90vw !important;
+  }
 }
 @media screen and (max-width:1400px){
   #desc-date{
@@ -305,11 +281,31 @@
   .info_cont_inner{
     padding: 20px !important;
   }
+  #fest{
+    scale: (5,1);
+  }
+  #Events{
+    justify-content: center !important;
+  }
 }
 @media screen and (max-width:1050px){
   #Events{
     width: 100vw !important;
     justify-content: center !important;
+  }
+}
+@media screen and (max-width:1000px){
+  .event_cont:hover{
+    transform: none;
+  }
+  .card-body{
+    background-color: white !important;
+  }
+  .card img{
+    filter: grayscale(0);
+  }
+  .spec_font,.card-body{
+    color: black !important;
   }
 }
 @media screen and (max-width:800px){
@@ -339,6 +335,15 @@
   .info_cont_inner p{
     font-size: 16px !important;
   }
+  #fest{
+    font-size: 100px !important;
+  }
+  .moving-text{
+    letter-spacing: 5px !important;
+  }
+  #landing-inner .btn{
+    font-size: 20px !important;
+  }
 }
 @media screen and (max-width:500px){
   .triangle{
@@ -364,5 +369,11 @@
     font-size: 12px !important;
     padding: 0px !important;
     margin: 10px !important;
+  }
+  #fest{
+    transform: scaleY(10),scaleX(2) !important;
+  }
+  #landing-inner .btn{
+    font-size: 15px !important;
   }
 }

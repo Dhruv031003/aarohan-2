@@ -4,6 +4,7 @@ body {
   margin: 0px !important;
   height: 100% !important;
   width: 100% !important;
+  background-color: transparent;
 }
 :root {
   --red: rgb(255, 0, 0);
@@ -98,60 +99,25 @@ nav {
     color: black;
     text-decoration: underline black;
 }
-@media screen and (max-width: 1300px) {
-  #footer > div {
-    width: 90vw !important;
-    padding: 10px !important;
-  }
-  #footer > div > div {
-    width: 90% !important;
-    text-align: center !important;
-  }
-  #footer > div > div div {
-    padding: 15px !important;
-  }
-  #footer div:nth-child(2) div {
-    height: 70% !important;
-  }
-  #footer div:nth-child(2):nth-child(2) {
-    width: 80% !important;
-  }
-  #footer > div > div {
-    padding: 0px !important;
-  }
-  #map {
-    margin: 20px !important;
-  }
-  #footer div:nth-child(2) > div iframe {
-    height: 250px !important;
-    width: 250px !important;
-    padding: 0px !important;
-  }
+@media screen and (max-width: 700px) {
+    #footer{
+        flex-direction: column !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    #footer_cont{
+        padding-bottom: 50px !important;
+    }
+    #credits{
+        width: 95vw !important;
+    }
+    #footer h5{
+        font-size: 15px !important;
+        padding: 0px !important;
+        margin: 5px !important;
+    }
+    #footer .btn{
+        font-size: 15px !important;
+    }
 }
-@media screen and (max-width: 800px) {
-  #footer p,
-  #footer a {
-    font-size: 16px !important;
-  }
-}
-@media screen and (max-width: 600px) {
-  #footer img {
-    width: 20px;
-  }
-  #footer div:nth-child(2):nth-child(2) {
-    width: 100% !important;
-  }
-  #footer div:nth-child(2) div {
-    height: max-content !important;
-  }
-  #footer div:nth-child(2) div {
-    height: max-content !important;
-  }
-  #footer div:nth-child(2) div iframe {
-    height: 100% !important;
-    width: 80% !important;
-  }
-  #map {
-    height: 10% !important;
-  }
-}
+
