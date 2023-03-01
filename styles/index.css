@@ -136,11 +136,11 @@
 }
 #moving-text-1 {
   bottom: -50px;
-  animation: 60s linear 0s infinite alternate forwards running marquee;
+  animation: 40s linear 0s infinite alternate forwards running marquee;
 }
 #moving-text-2 {
   bottom: -100px;
-  animation: 60s linear 0s infinite alternate-reverse none running marquee;
+  animation: 40s linear 0s infinite alternate-reverse none running marquee;
 }
 @keyframes marquee {
   0% {
