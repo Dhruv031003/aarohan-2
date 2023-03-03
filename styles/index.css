@@ -40,13 +40,13 @@
     transform: none;
   }
   25%{
-    transform: translate3d(3px,3px,3px);
+    transform: scale3d(1,1.05,1.05);
   }
   50%{
-    transform: translate3d(-3px,-3px,-3px);
+    transform: scale3d(1.05,1,1.05);
   }
   75%{
-    transform: translate3d(3px,-3px,-3px);
+    transform: scale3d(1.05,1.05,1);
   }
 }
 #landing-inner h3 {
@@ -223,7 +223,7 @@
 
 .event_cont:hover {
   transform: scale(1.05);
-  box-shadow: 0px 0px 10px white;
+  box-shadow: 0px 0px 1px white;
     opacity: 1;
 }
 .card-body {

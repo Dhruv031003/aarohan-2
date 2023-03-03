@@ -78,6 +78,11 @@ main > div {
   border-color: transparent !important;
   box-shadow: -8px -8px 0 -6px var(--red), 8px 8px 0 -6px var(--red) !important;
 }
+#social_cont img {
+  filter: invert(1);
+  height: 30px !important;
+  margin: 0px 20px !important;
+}
 @keyframes width-event-cont {
   0% {
     width: 100%;
@@ -90,7 +95,7 @@ main > div {
   .event_cont:hover {
     transform: none;
   }
-  .headings{
+  .headings {
     font-size: 50px !important;
   }
   .card {
@@ -125,8 +130,8 @@ main > div {
     border-color: black !important;
   }
 }
-@media screen and (max-width: 800px){
-    .headings{
-        font-size: 25px !important;
-      }
+@media screen and (max-width: 800px) {
+  .headings {
+    font-size: 25px !important;
+  }
 }
