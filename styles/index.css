@@ -16,11 +16,11 @@
 }
 #landing-inner {
   position: absolute;
-  bottom: 8% !important;
+  bottom: 10% !important;
   left: 0;
   right: 0;
   margin-left: auto;
-  margin-right: auto  ;
+  margin-right: auto;
   font-family: "Kurale", serif;
   color: red;
   text-align: center;
@@ -46,7 +46,7 @@
   left: 250px;
   color: white;
 }
-#desc-date{
+#desc-date {
   z-index: 1;
 }
 #date::before,
@@ -78,7 +78,7 @@
   top: 0px;
   left: 0px;
 }
-#about_us{
+#about_us {
   background-image: url(../images/college.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -103,7 +103,7 @@
   letter-spacing: 2px;
   font-size: 20px !important;
 }
-.info_cont_inner .spec_font{
+.info_cont_inner .spec_font {
   font-size: 28px !important;
 }
 #about_aarohan {
@@ -122,7 +122,7 @@
   font-family: fantasy;
   transform: scaleY(3) !important;
 }
-.moving-text{
+.moving-text {
   position: absolute;
   left: 0px;
   color: white !important;
@@ -131,7 +131,7 @@
   white-space: nowrap;
   letter-spacing: 20px !important;
   font-family: fantasy;
-  scale:(1.5,1) !important;
+  scale: (1.5, 1) !important;
   z-index: -3;
 }
 #moving-text-1 {
@@ -156,7 +156,7 @@
   flex-basis: 50% !important;
   width: 75vw;
 }
-#event-bg{
+#event-bg {
   position: relative;
   height: 100% !important;
   background-image: url(../images/event-bg-1.jpg);
@@ -185,18 +185,18 @@
 }
 
 @keyframes width-event-cont {
-  0%{
+  0% {
     width: 100%;
   }
-  100%{
+  100% {
     width: 0%;
   }
 }
 
-#event_heading{
+#event_heading {
   transform: scaleY(1.3);
   width: 100% !important;
-  border-bottom: 4px solid white; 
+  border-bottom: 4px solid white;
 }
 
 .event_cont:hover {
@@ -204,27 +204,28 @@
   box-shadow: 0px 0px 20px black;
   opacity: 1;
 }
-.card-body{
+.card-body {
   background-color: black !important;
 }
-.card img{
+.card img {
   filter: grayscale(1);
 }
 
-.event_cont:hover .card-body{
+.event_cont:hover .card-body {
   background-color: white !important;
 }
-.event_cont:hover img{
+.event_cont:hover img {
   filter: grayscale(0);
 }
-.event_cont:hover .spec_font,.event_cont:hover .card-body{
+.event_cont:hover .spec_font,
+.event_cont:hover .card-body {
   color: black !important;
 }
 .card {
   width: 18rem !important;
   background: none !important;
 }
-.event_cont:hover .btn{
+.event_cont:hover .btn {
   color: black !important;
   border-color: black !important;
 }
@@ -237,145 +238,148 @@
   box-shadow: -8px -8px 0 -6px var(--red), 8px 8px 0 -6px var(--red) !important;
 }
 
-@media screen and (min-width:2000px){
-  #Events{
+@media screen and (min-width: 2000px) {
+  #Events {
     justify-content: center !important;
     width: 97vw !important;
     margin: 0px !important;
   }
-  .event_cont{
+  .event_cont {
     flex-basis: 11%;
   }
 }
-@media screen and (max-width:1600px){
-  .info_cont_inner .spec_font{
+@media screen and (max-width: 1600px) {
+  .info_cont_inner .spec_font {
     font-size: 22px !important;
   }
-  .info_cont_inner p{
+  .info_cont_inner p {
     font-size: 17px !important;
   }
-  #fest{
+  #fest {
     font-size: 150px;
   }
-  #Events{
+  #Events {
     width: 90vw !important;
   }
 }
-@media screen and (max-width:1400px){
-  #desc-date{
+@media screen and (max-width: 1400px) {
+  #desc-date {
     padding-top: 20px !important;
   }
-  #desc{
+  #desc {
     left: 30px;
   }
-  #date{
+  #date {
     right: 30px;
   }
-  .info_cont_inner{
+  .info_cont_inner {
     padding: 20px !important;
     padding-top: 30px !important;
   }
-  #fest{
-    scale: (5,1);
+  #fest {
+    scale: (5, 1);
   }
-  #Events{
+  #Events {
     justify-content: center !important;
   }
 }
-@media screen and (max-width:1050px){
-  #Events{
+@media screen and (max-width: 1050px) {
+  #Events {
     width: 100vw !important;
     justify-content: center !important;
   }
 }
-@media screen and (max-width:1000px){
-  .event_cont:hover{
+@media screen and (max-width: 1000px) {
+  .event_cont:hover {
     transform: none;
   }
-  .card-body{
+  .card-body {
     background-color: white !important;
   }
-  .card img{
+  .card img {
     filter: grayscale(0);
   }
-  .card-body .spec_font,.card-body{
+  .card-body .spec_font,
+  .card-body {
     color: black !important;
   }
-  .card-body .btn{
+  .card-body .btn {
     color: black !important;
     border-color: black !important;
   }
 }
-@media screen and (max-width:800px){
-  
-  #landing-inner h2{
+@media screen and (max-width: 800px) {
+  #landing-inner h2 {
     font-size: 58px !important;
   }
-  #landing-inner h3{
+  #landing-inner h3 {
     font-size: 30px !important;
     letter-spacing: 5px;
     word-spacing: 0px;
   }
-  #desc-date{
+  #desc-date {
     flex-direction: column;
   }
-  #desc{
+  #desc {
     left: 0px;
   }
-  #date{
+  #date {
     right: 0px;
   }
-  .info_cont_inner{
+  .info_cont_inner {
     width: 80vw !important;
   }
-  .info_cont_inner .spec_font{
+  .info_cont_inner .spec_font {
     font-size: 20px !important;
   }
-  .info_cont_inner p{
+  .info_cont_inner p {
     font-size: 18px !important;
   }
-  #fest{
+  #fest {
     font-size: 100px !important;
   }
-  .moving-text{
+  .moving-text {
     letter-spacing: 5px !important;
   }
-  #landing-inner .btn{
+  #landing-inner .btn {
     font-size: 20px !important;
   }
-}
-@media screen and (max-width:500px){
-  .triangle{
-    border-bottom: 20px solid rgb(0, 0, 0);
-  border-left: 20px solid transparent;
+  #landing-inner {
+    bottom: 15% !important;
   }
-  #landing-inner h2{
+}
+@media screen and (max-width: 500px) {
+  .triangle {
+    border-bottom: 20px solid rgb(0, 0, 0);
+    border-left: 20px solid transparent;
+  }
+  #landing-inner h2 {
     font-size: 35px !important;
   }
-  #landing-inner h3{
+  #landing-inner h3 {
     font-size: 20px !important;
     letter-spacing: 0px;
     word-spacing: 10px;
   }
-  #desc-date p{
+  #desc-date p {
     font-size: 15px !important;
   }
-  .info_cont_inner{
+  .info_cont_inner {
     padding: 10px !important;
     padding-top: 20px !important;
   }
-  .info_cont_inner .spec_font{
+  .info_cont_inner .spec_font {
     font-size: 18px !important;
   }
-  .info_cont_inner p{
+  .info_cont_inner p {
     font-size: 14px !important;
     padding: 0px !important;
     margin: 10px !important;
   }
-  #fest{
-    transform: scaleY(10),scaleX(2) !important;
+  #fest {
+    transform: scaleY(10), scaleX(2) !important;
   }
-  #landing-inner .btn{
+  #landing-inner .btn {
     font-size: 15px !important;
   }
 }
