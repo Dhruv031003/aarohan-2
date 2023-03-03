@@ -79,7 +79,7 @@
   left: 0px;
 }
 #about_us{
-  background-image: url(../images/cityscape.jpg);
+  background-image: url(../images/college.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -114,7 +114,7 @@
 
 #fest {
   position: absolute;
-  top: 0px;
+  top: 50px;
   left: 100px;
   color: white !important;
   font-size: 200px;
@@ -183,20 +183,7 @@
   box-shadow: none;
   color: white;
 }
-/* .event_cont::after{
-  content: "";
-  position: absolute;
-  background-color: black;
-  height: 100%;
-  width: 100%;
-  z-index: 2;
-}
-.event_cont:hover::after{
-  animation-name: width-event-cont;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards; 
-}*/
+
 @keyframes width-event-cont {
   0%{
     width: 100%;

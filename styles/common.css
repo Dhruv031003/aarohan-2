@@ -9,6 +9,10 @@ body {
 :root {
   --red: rgb(255, 0, 0);
 }
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+
 /* Button special css  */
 .btn {
   color: white !important;
@@ -40,8 +44,8 @@ nav {
   padding: 5px 15px !important;
 }
 .nav-item>a:hover,
-.nav-item>a:active,
-.nav-item>a:focus {
+.nav-item>a:focus,
+#active{
   color: var(--red) !important;
 }
 .navbar-brand {
@@ -79,6 +83,7 @@ nav {
     background-color: black !important;
     color: white !important;
     box-shadow: none !important;
+    border-radius: 0px !important;
 }
 #footer .spec_font {
   border-bottom: none;
@@ -95,7 +100,6 @@ nav {
     margin: 10px !important;
     filter: grayscale(1);
 }
-
 #credits a{
     color: black;
     text-decoration: underline black;

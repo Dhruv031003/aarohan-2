@@ -1,0 +1,132 @@
+main > div {
+  padding-top: 50px !important    ;
+  padding-bottom: 50px !important;
+}
+#Events {
+  width: 75vw;
+}
+#event-bg {
+  position: relative;
+  height: 100% !important;
+  background-image: url(../images/event-bg-1.jpg);
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#event-bg .spec_font {
+  font-size: 30px !important;
+  border-bottom: 3px solid black;
+  font-family: fantasy;
+  transform: scaleY(2);
+  margin-bottom: 20px !important;
+}
+.event_cont {
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  transform: scale(1);
+  transition: transform 0.25s ease-in-out;
+  box-shadow: none;
+  color: white;
+}
+
+#event_heading {
+  transform: scaleY(1.3);
+  width: 100% !important;
+  border-bottom: 4px solid white;
+}
+
+.event_cont:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px black;
+  opacity: 1;
+}
+.card-body {
+  background-color: black !important;
+  height: 100%;
+  padding-top: 50px !important;
+  padding-left: 20px !important;
+}
+.card img {
+  filter: grayscale(1);
+  height: 100% !important;
+  width: 100% !important;
+}
+.card p {
+  font-size: 22px !important;
+}
+.event_cont:hover .card-body {
+  background-color: white !important;
+}
+.event_cont:hover img {
+  filter: grayscale(0);
+}
+.event_cont:hover .spec_font,
+.event_cont:hover .card-body {
+  color: black !important;
+}
+.event_cont:hover .btn {
+  color: black !important;
+  border-color: black !important;
+}
+.event_cont:hover .btn:hover,
+.btn:focus,
+.btn:active,
+.open .dropdown-toggle.btn-default {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: -8px -8px 0 -6px var(--red), 8px 8px 0 -6px var(--red) !important;
+}
+@keyframes width-event-cont {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .event_cont:hover {
+    transform: none;
+  }
+  .headings{
+    font-size: 50px !important;
+  }
+  .card {
+    width: 70vw !important;
+    flex-direction: column;
+  }
+  #event-bg .spec_font {
+    font-size: 20px !important;
+    border-bottom: 2px solid black;
+    font-family: fantasy;
+    transform: scaleY(1.5);
+    margin-bottom: 12px !important;
+  }
+  .card p {
+    font-size: 16px !important;
+  }
+  .card-body {
+    background-color: white !important;
+    padding-top: 15px !important;
+    padding-left: 10px !important;
+  }
+  .card img {
+    filter: grayscale(0);
+    height: 100% !important;
+  }
+  .card-body .spec_font,
+  .card-body {
+    color: black !important;
+  }
+  .card-body .btn {
+    color: black !important;
+    border-color: black !important;
+  }
+}
+@media screen and (max-width: 800px){
+    .headings{
+        font-size: 25px !important;
+      }
+}
