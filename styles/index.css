@@ -1,5 +1,6 @@
 #landing-container {
   height: 100vh !important;
+  height: calc(var(--vh, 1vh) * 100);
   margin: 0px !important;
   padding: 0px !important;
   position: relative;
