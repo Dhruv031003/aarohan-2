@@ -29,6 +29,26 @@
 #landing-inner h2 {
   font-size: 80px;
 }
+#landing-inner h2:hover{
+  animation-name: shake;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+@keyframes shake {
+  0%,100%{
+    transform: none;
+  }
+  25%{
+    transform: translate3d(3px,3px,3px);
+  }
+  50%{
+    transform: translate3d(-3px,-3px,-3px);
+  }
+  75%{
+    transform: translate3d(3px,-3px,-3px);
+  }
+}
 #landing-inner h3 {
   font-size: 40px;
   letter-spacing: 10px;
