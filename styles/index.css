@@ -182,7 +182,7 @@
   height: 100% !important;
   background-image: url(../images/event-bg-1.jpg);
   background-color: black;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -203,6 +203,7 @@
   transition: transform 0.25s ease-in-out;
   box-shadow: none;
   color: white;
+  box-shadow: 0px 0px 5px white;
 }
 
 @keyframes width-event-cont {
@@ -222,8 +223,8 @@
 
 .event_cont:hover {
   transform: scale(1.05);
-  box-shadow: 0px 0px 20px black;
-  opacity: 1;
+  box-shadow: 0px 0px 10px white;
+    opacity: 1;
 }
 .card-body {
   background-color: black !important;
