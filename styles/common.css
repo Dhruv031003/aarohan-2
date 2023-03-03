@@ -104,6 +104,18 @@ nav {
     color: black;
     text-decoration: underline black;
 }
+#hamburger{
+  padding: 0px !important;
+}
+#hamburger:focus{
+  box-shadow: none !important;
+  border: none !important;
+  filter: sepia(1);
+}
+#hamburger img{
+  height: 20px !important;
+  filter: invert(1);
+}
 @media screen and (max-width: 700px) {
     #footer{
         flex-direction: column !important;
@@ -124,5 +136,9 @@ nav {
     #footer .btn{
         font-size: 15px !important;
     }
+    #logo{
+      height: 50px !important;
+    }
 }
+
 
