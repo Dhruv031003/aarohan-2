@@ -1,5 +1,4 @@
 .card {
-  width: 18rem !important;
   background: none !important;
 }
 .event_cont {
@@ -17,8 +16,9 @@
     left: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    margin-bottom: 5px !important;
-}
+    padding-bottom: 5px !important;
+    backdrop-filter: blur(7px) !important;
+  }
 .event_cont:hover #name{
     transform: translateY(0%);
 }
@@ -59,16 +59,22 @@ main > div {
 
 .card img {
   filter: grayscale(1);
-  height: 100% !important;
-  width: 100% !important;
+  height: 300px !important;
+  width: 250px !important;
 }
+.event_cont:hover .spec_font,.event_cont:hover p{
+  color: black !important;
+}
+.event_cont:hover #name img{
+  filter: invert(0);
+}
+
 .event_cont:hover img{
     filter: grayscale(0);
 }
 .card p {
   font-size: 22px !important;
 }
-
 
 @media screen and (max-width: 1050px) {
   .event_cont:hover {
@@ -87,25 +93,23 @@ main > div {
   .card p {
     font-size: 16px !important;
   }
-  .card-body {
-    background-color: white !important;
-    padding-top: 15px !important;
-    padding-left: 10px !important;
-  }
   .card img {
-    filter: grayscale(0);
-    height: 100% !important;
-  }
-  .card-body .spec_font,
-  .card-body {
-    color: black !important;
-  }
-  .card-body .btn {
-    color: black !important;
-    border-color: black !important;
+    filter: grayscale(0) !important;
+
   }
   #name{
     transform: none;
+  }
+  .card img {
+    filter: grayscale(1);
+    height: 300px !important;
+    width: 250px !important;
+  }
+  .event_cont:hover .spec_font,.event_cont:hover p{
+    color: black !important;
+  }
+  .event_cont:hover #name img{
+    filter: invert(0);
   }
 }
 @media screen and (max-width: 800px) {
