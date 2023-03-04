@@ -105,6 +105,9 @@ main > div {
     height: 300px !important;
     width: 250px !important;
   }
+  .event_cont .spec_font,.event_cont p{
+    color: black !important;
+  }
   .event_cont:hover .spec_font,.event_cont:hover p{
     color: black !important;
   }
