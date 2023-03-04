@@ -201,7 +201,6 @@
   background-color: rgb(0, 0, 0);
   transform: scale(1);
   transition: transform 0.25s ease-in-out;
-  box-shadow: none;
   color: white;
   box-shadow: 0px 0px 5px white;
 }
