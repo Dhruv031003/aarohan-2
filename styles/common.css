@@ -116,6 +116,11 @@ nav {
   height: 20px !important;
   filter: invert(1);
 }
+#social_cont img{
+  height: 30px !important;
+  margin: 0px 20px !important;
+  filter: invert(1);
+}
 @media screen and (max-width: 700px) {
     #footer{
         flex-direction: column !important;
