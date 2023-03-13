@@ -4,23 +4,23 @@
 .event_cont {
   box-shadow: 0px 0px 5px white !important;
   border-radius: 10px;
-  color: white;
   overflow: hidden;
 }
 #name{
     position: absolute;
     bottom: 0px !important;
-    transform: translateY(120%);
-    transition: transform 0.25s ease-in-out;
+    transition: bottom 0.25s ease-in-out;
     right: 0px;
     left: 0px;
     margin-left: 0px;
     margin-right: 0px;
+    bottom: -120% !important;
     padding-bottom: 5px !important;
     backdrop-filter: blur(7px) !important;
+    background-color: rgba(255, 255, 255, 0.438);
   }
 .event_cont:hover #name{
-    transform: translateY(0%);
+    bottom: 0% !important;
 }
 #name img {
   height: 30px !important;
@@ -46,8 +46,7 @@ main > div {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   transform: scaleY(2);
   font-size: 18px !important;
-  border-bottom: 2px solid black !important;
-  margin: 10px !important;
+  margin-top: 10px !important;
   font-weight: 100 !important;
 }
 
