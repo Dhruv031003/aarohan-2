@@ -89,9 +89,10 @@
 }
 
 .info_cont h2 {
-  word-spacing: 20px;
+  font-size: 30px !important;
+  /* word-spacing: 20px; */
   letter-spacing: 0px;
-  transform: scaleY(3);
+  transform: scaleY(2);
   padding: 10px;
 }
 .info_cont_inner {
@@ -105,7 +106,7 @@
   font-size: 20px !important;
 }
 .info_cont_inner .spec_font {
-  font-size: 28px !important;
+  font-size: 28px;
 }
 #about_aarohan {
   background-color: black;
@@ -118,7 +119,7 @@
   top: 50px;
   left: 100px;
   color: white !important;
-  font-size: 200px;
+  font-size: 200px !important;
   letter-spacing: 20px !important;
   font-family: fantasy;
   transform: scaleY(3) !important;
@@ -127,7 +128,7 @@
   position: absolute;
   left: 0px;
   color: white !important;
-  font-size: 50px;
+  font-size: 50px !important;
   width: 200%;
   white-space: nowrap;
   letter-spacing: 20px !important;
