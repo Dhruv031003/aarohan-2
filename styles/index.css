@@ -247,15 +247,7 @@
   box-shadow: -8px -8px 0 -6px var(--red), 8px 8px 0 -6px var(--red) !important;
 }
 
-#whatsapp{
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-}
-#whatsapp:hover{
-  filter: contrast(2);
-  scale: 1.1;
-}
+
 #concert{
   min-height: 100vh;
   background-image: url('../images/concert.jpg');

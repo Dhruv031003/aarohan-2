@@ -104,6 +104,15 @@ nav {
     color: black;
     text-decoration: underline black;
 }
+#whatsapp{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+#whatsapp:hover{
+  filter: contrast(2);
+  scale: 1.1;
+}
 #hamburger{
   padding: 0px !important;
 }
