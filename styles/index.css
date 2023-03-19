@@ -248,11 +248,14 @@
 }
 
 
-#concert{
+#concert,#merch{
   min-height: 100vh;
   background-image: url('../images/concert.jpg');
   background-position: center;
   background-size: cover;
+}
+#merch img{
+  height: 400px;
 }
 #concert img{
   height: 100vh !important;
@@ -318,11 +321,11 @@
     width: 100vw !important;
     justify-content: center !important;
   }
-  #concert{
+  #concert,#merch{
     flex-direction: column;
     padding: 20px !important;
   }
-  #concert div{
+  #concert div,#merch div{
     width: 60% !important;
   }
 }
@@ -384,8 +387,8 @@
   #landing-inner {
     bottom: 15% !important;
   }
-  #concert h3{
-    font-size: 60px !important;
+  #concert h3,#merch h3{
+    font-size: 50px !important;
   }
 }
 @media screen and (max-width: 500px) {
@@ -428,11 +431,17 @@
   #concert img{
     height: 400px !important;
   }
-  #concert div{
+  #merch img{
+    height: 200px !important;
+  }
+  #concert div,#merch div{
     width: 95% !important;
     padding: 10px !important;
   }
-  #concert h3{
-    font-size: 50px !important;
+  #concert h3,#merch h3{
+    font-size: 35px !important;
+  }
+  #youngsters_logo{
+    height: 40px;
   }
 }
